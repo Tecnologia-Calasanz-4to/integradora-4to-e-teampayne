@@ -1,3 +1,4 @@
+#PARTE C
 def porcentaje_vida(actual, maxima):
     r= actual / maxima * 100
     return r 
@@ -10,4 +11,6 @@ def estado_vida(porcentaje):
         devolver="SANO"
     return devolver
 def comprar_pociones(monedas, precio):
-    pass    # TODO: monedas // precio  y  monedas % precio
+    cantidadpociones= monedas // precio
+    vuelto= monedas % precio
+    return cantidadpociones, vuelto
